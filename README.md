@@ -6,6 +6,7 @@ The suckless terminal (st) with some additional features that make it literally 
 
 - alpha
 - font2
+- ligatures
 
 ## Extra Features
 
@@ -16,7 +17,7 @@ The suckless terminal (st) with some additional features that make it literally 
 The following dependencies should already be installed before continuing with any of the following steps
 
 - xlib header files
-- libharfbuzz build files
+- libharfbuzz build files `sudo apt install libharfbuzz-dev`
 - make
 - fontconfig
 - libX11
