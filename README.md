@@ -22,7 +22,7 @@ The following dependencies should already be installed before continuing with an
 - libX11
 - libXft
 
-Fonts:
+**Fonts:**
 
 - JetbrainsMono Mono Nerd Font or any nerd font from [here](https://www.nerdfonts.com/font-downloads).
 - fonts-noto-color-emoji `sudo apt install fonts-noto-color-emoji`
