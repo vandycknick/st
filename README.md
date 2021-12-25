@@ -2,6 +2,11 @@
 
 The suckless terminal (st) with some additional features that make it literally the best terminal emulator ever!
 
+## Patches
+
+- alpha
+- font2
+
 ## Extra Features
 
 - **copy text** with `alt-c`, **paste text** with `alt-v` or `shift-insert`
@@ -16,6 +21,11 @@ The following dependencies should already be installed before continuing with an
 - fontconfig
 - libX11
 - libXft
+
+Fonts:
+
+- JetbrainsMono Mono Nerd Font or any nerd font from [here](https://www.nerdfonts.com/font-downloads).
+- fonts-noto-color-emoji `sudo apt install fonts-noto-color-emoji`
 
 Most likely you have all of these installed already.
 
@@ -34,16 +44,9 @@ It could be that st crashes while trying to render an emoji or special character
 Clone libXft:
 
 ```sh
-https://gitlab.freedesktop.org/xorg/lib/libxft.git
-```
-
-If still not merged to master apply patch from this PR: https://gitlab.freedesktop.org/xorg/lib/libxft/-/merge_requests/1
-
-Build and install the library:
-
-```sh
-./configure --prefix=/usr --sysconfdir=/etc --disable-static
-make
+git clone https://github.com/uditkarode/libxft-bgra
+cd libxft-bgra
+sh autogen.sh --sysconfdir=/etc --prefix=/usr --mandir=/usr/share/man
 sudo make install
 ```
 
