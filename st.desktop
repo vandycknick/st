@@ -1,8 +1,15 @@
 [Desktop Entry]
-Name=st
-Comment=st is a simple terminal implementation for X
+Name=Simple Terminal
+GenericName=Terminal
+Comment=Suckless terminal emulator for X
 Exec=st
-Icon=utilities-terminal
 Terminal=false
 Type=Application
+Encoding=UTF-8
+Icon=utilities-terminal
 Categories=System;TerminalEmulator;
+Keywords=st256;simple;shell;prompt;command;commandline;cmd;
+StartupNotify=true
+X-GNOME-SingleWindow=false
+OnlyShowIn=GNOME;Unity;
+StartupWMClass=st-256color
