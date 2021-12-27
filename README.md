@@ -27,6 +27,7 @@ The following dependencies should already be installed before continuing with an
 
 - JetbrainsMono Mono Nerd Font or any nerd font from [here](https://www.nerdfonts.com/font-downloads).
 - fonts-noto-color-emoji `sudo apt install fonts-noto-color-emoji`
+- fonts-powerline `sudo apt install fonts-powerline`
 
 Most likely you have all of these installed already.
 
@@ -55,10 +56,12 @@ Backup current libXFT binary and replace old lib with patched version:
 
 ```sh
 sudo cp /lib/x86_64-linux-gnu/libXft.a /lib/x86_64-linux-gnu/libXft.a.old
-
 sudo cp /lib/x86_64-linux-gnu/libXft.so.2.3.3 /lib/x86_64-linux-gnu/libXft.so.2.3.3.old
 
-sudo ln -sf /usr/lib/libXft.a /lib/x86_64-linux-gnu/libXft.a
+sudo ln -sf /usr/lib/libXft.a /usr/lib/x86_64-linux-gnu/libXft.a
+sudo ln -sf /usr/lib/libXft.so.2.3.3 /usr/lib/x86_64-linux-gnu/libXft.so.2.3.3
+sudo ln -sf /usr/lib/x86_64-linux-gnu/libXft.so.2.3.3 /usr/lib/x86_64-linux-gnu/libXft.so.2
+sudo ln -sf /usr/lib/x86_64-linux-gnu/libXft.so.2.3.3 /usr/lib/x86_64-linux-gnu/libXft.so
 ```
 
 ## Configure ST as your default terminal emulator
