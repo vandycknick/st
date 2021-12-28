@@ -104,34 +104,34 @@ float alpha = 0.9;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#000000", // "black",
-	"#FF5555", // "red3",
-	"#50FA7B", // "green3",
-	"#F1FA8C", // "yellow3",
-	"#BD93F9", // "blue2",
-	"#FF79C6", // "magenta3",
-	"#8BE9FD", // "cyan3",
-	"#BFBFBF", // "gray90",
+	"#3f4451", // "black",
+	"#e05561", // "red",
+	"#8cc265", // "green",
+	"#d18f52", // "yellow",
+	"#4aa5f0", // "blue",
+	"#c162de", // "magenta",
+	"#42b3c2", // "cyan",
+	"#e6e6e6", // "white",
 
 	/* 8 bright colors */
-	"#6b6b6b", // "gray50",
-	"#FF6E67", // "red",
-	"#5AF78E", // "green",
-	"#F4F99D", // "yellow",
-	"#CAA9FA", // "#5c5cff",
-	"#FF92D0", // "magenta",
-	"#9AEDFE", // "cyan",
-	"#E6E6E6", // "white",
+	"#4f5666", // "brightBlack",
+	"#ff616e", // "brightRed",
+	"#a5e075", // "brightGreen",
+	"#f0a45d", // "brightYellow",
+	"#4dc4ff", // "brightBlue",
+	"#de73ff", // "brightMagenta",
+	"#4cd1e0", // "brightCyan",
+	"#d7dae0", // "brightWhite",
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#cccccc",
 	"#555555",
-	"#282C34", // background
-	"#F8F8F2", //foreground
+	"#282c34", // background
+	"#F8F8F2", // foreground
 
-	"#F81CE5", // Cursor color
+	"#f81ce5", // Cursor color
 };
 
 /*
