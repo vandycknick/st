@@ -73,3 +73,30 @@ sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emula
 
 sudo update-alternatives --set x-terminal-emulator /usr/local/bin/st
 ```
+
+## Upgrade ST version
+
+Clone the upstream ST repository locally:
+
+```sh
+git clone git://git.suckless.org/st upstream
+```
+
+Go into the upstream directory and create a patch between the current version and the latest version.
+
+> The current version can be found at the top of the config.mk file
+
+```sh
+cd upstream
+mkdir -p ../patches
+git diff 0.8.4 0.8.5 > ../patches/st-0.8.5.diff
+```
+
+This creates a new patch, which can be applied with `git apply`
+
+```sh
+cd ..
+git apply --reject --whitespace=fix ./patches/st-0.8.5
+```
+
+Fixup any rejected patches and run `make` to create a new build.
