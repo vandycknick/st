@@ -74,7 +74,7 @@ sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emula
 sudo update-alternatives --set x-terminal-emulator /usr/local/bin/st
 ```
 
-## Upgrade ST version
+## Upgrade ST
 
 Clone the upstream ST repository locally:
 
