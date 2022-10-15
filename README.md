@@ -46,8 +46,9 @@ It could be that st crashes while trying to render an emoji or special character
 Clone libXft:
 
 ```sh
-git clone https://github.com/uditkarode/libxft-bgra
-cd libxft-bgra
+git https://gitlab.freedesktop.org/xorg/lib/libxft
+cd libxft
+git checkout libXft-2.3.6
 sh autogen.sh --sysconfdir=/etc --prefix=/usr --mandir=/usr/share/man
 sudo make install
 ```
@@ -55,15 +56,9 @@ sudo make install
 Backup current libXFT binary and replace old lib with patched version:
 
 ```sh
-sudo cp /lib/x86_64-linux-gnu/libXft.a /lib/x86_64-linux-gnu/libXft.a.old
-sudo cp /lib/x86_64-linux-gnu/libXft.so.2.3.3 /lib/x86_64-linux-gnu/libXft.so.2.3.3.old
-sudo cp /lib/x86_64-linux-gnu/libXft.so.2.3.4 /lib/x86_64-linux-gnu/libXft.so.2.3.4.old
-
-sudo ln -sf /usr/lib/libXft.a /usr/lib/x86_64-linux-gnu/libXft.a
-sudo ln -sf /usr/lib/libXft.so.2.3.3 /usr/lib/x86_64-linux-gnu/libXft.so.2.3.3
-sudo ln -sf /usr/lib/x86_64-linux-gnu/libXft.so.2.3.3 /usr/lib/x86_64-linux-gnu/libXft.so.2
-sudo ln -sf /usr/lib/x86_64-linux-gnu/libXft.so.2.3.3 /usr/lib/x86_64-linux-gnu/libXft.so
-sudo ln -sf /usr/lib/x86_64-linux-gnu/libXft.so.2.3.3 /usr/lib/x86_64-linux-gnu/libXft.so.2.3.4
+sudo ln -sf /usr/lib/libXft.so.2.3.6 /usr/lib/x86_64-linux-gnu/libXft.so.2.3.6
+sudo ln -sf /usr/lib/x86_64-linux-gnu/libXft.so.2.3.6 /usr/lib/x86_64-linux-gnu/libXft.so
+sudo ln -sf /usr/lib/x86_64-linux-gnu/libXft.so.2.3.6 /usr/lib/x86_64-linux-gnu/libXft.so.2
 ```
 
 ## Configure ST as your default terminal emulator
