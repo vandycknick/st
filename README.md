@@ -41,7 +41,7 @@ Be sure to have a composite manager (`xcompmgr`, `picom`, etc.) running if you w
 
 ## Emojis and Special Characters
 
-It could be that st crashes while trying to render an emoji or special character. This is due to a shortcoming/bug in libXft, a patch is available but hasn't rolled out yet. Hopefully this gets rolled out soon and made available to newer distro's. On arch you can install [libxft-bgra](https://aur.archlinux.org/packages/libxft-bgra) from the AUR. On other distros you'll have to build libXft from source and apply the patch manually:
+It could be that st crashes while trying to render an emoji or special character. This is due to a shortcoming/bug in libXft, this is fixed as of version 2.3.5. Modern or rolling linux distros like Arch should already shipped with a patched libXft library. On older distros you'll have to build libXft from source and apply the pacth manually:
 
 Clone libXft:
 
