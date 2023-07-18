@@ -8,6 +8,7 @@ The suckless terminal (st) with some additional features that make it literally 
 - font2
 - ligatures
 - [wide glyph support](https://st.suckless.org/patches/glyph_wide_support/)
+- [undercurl](https://st.suckless.org/patches/undercurl/)
 
 ## Extra Features
 
