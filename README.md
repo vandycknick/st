@@ -7,7 +7,6 @@ The suckless terminal (st) with some additional features that make it literally 
 - alpha
 - font2
 - ligatures
-- undercurl
 
 ## Extra Features
 
