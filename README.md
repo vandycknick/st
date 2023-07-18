@@ -7,6 +7,7 @@ The suckless terminal (st) with some additional features that make it literally 
 - alpha
 - font2
 - ligatures
+- [wide glyph support](https://st.suckless.org/patches/glyph_wide_support/)
 
 ## Extra Features
 
